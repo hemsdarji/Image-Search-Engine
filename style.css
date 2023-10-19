@@ -24,13 +24,11 @@ h1{
 
 form{
     height: 80px;
-    max-width: 600px;
-    width: 90%;
     background: #9aa9d1;
     margin: auto;
     display: flex;
     align-items: center;
-    margin: 24px 0;
+    margin: 24px 16px;
     border-radius:8px;
 }
 
@@ -80,10 +78,10 @@ form button{
     display: none;
 }
 #search-result{
-    width: 80%;
-    margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px auto;
+    display: grid;
     grid-gap: 40px;
 }
 
@@ -93,3 +91,18 @@ form button{
     object-fit: cover;
     border-radius: 8px;
 }
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #search-result  {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #search-result {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  
